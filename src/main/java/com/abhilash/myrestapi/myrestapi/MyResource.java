@@ -23,7 +23,7 @@ public class MyResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getIt() {
-    	int testid=20;
+    	int testid=24;
     	GameEngine game=new GameEngine();
     	return game.getFieldInfo(testid);
     }
