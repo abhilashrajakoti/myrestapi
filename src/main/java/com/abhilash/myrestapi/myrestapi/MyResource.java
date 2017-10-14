@@ -6,6 +6,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import com.core.game.CricketFieldPixel;
 import com.core.game.GameEngine;
 
 /**
@@ -21,9 +22,9 @@ public class MyResource {
      * @return String that will be returned as a text/plain response.
      */
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
-    public String getIt() {
-    	int testid=24;
+    @Produces(MediaType.APPLICATION_JSON)
+    public CricketFieldPixel getIt() {
+    	int testid=19;
     	GameEngine game=new GameEngine();
     	return game.getFieldInfo(testid);
     }
